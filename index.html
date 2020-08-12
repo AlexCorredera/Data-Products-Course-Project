@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Predicting Life Expectancy</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="stylesheet" href="libraries/frameworks/RevealJS/css/reveal.min.css">
+  <link rel="stylesheet" href="libraries/frameworks/RevealJS/css/theme/default.css" id="theme">
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" id="theme">
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->  <link rel="stylesheet" href = "assets/css/ribbons.css">
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section class='' data-state='' id='slide-1'>
+  <h2>Predicting Life Expectancy</h2>
+  <h3>A User-Friendly Application on US State-Level Data</h3>
+
+  
+</section>
+<section class='' data-state='' id='slide-2'>
+  <h2>Design your own Data Driven Predictive Model</h2>
+  <p>This application gives users the ability to define their own model and make predictions of US state-level life expectancy rates by setting desired predictive variable values </p>
+
+  
+</section>
+<section class='' data-state='' id='slide-3'>
+  <h2>The Data</h2>
+  <p>US state-level data is used to create predictive models of Life Expectancy (in years). Models can be built from the following predictive variables:</p>
+
+<ol>
+<li>Murder rate per 100,000 population</li>
+<li>Percent high-school graduates</li>
+<li>Mean number of frost days</li>
+</ol>
+
+  
+</section>
+<section class='' data-state='' id='slide-4'>
+  <h2>All you have to do is</h2>
+  <ol>
+<li>Select which variables to include</li>
+<li>Choose the values of the selected variables</li>
+<li>Calculate your predictive results and visualize this in a reactive graph</li>
+</ol>
+
+  
+</section>
+<section class='' data-state='' id='app'>
+  <h2>The App</h2>
+  <iframe src = 'https://alexcorredera.shinyapps.io/DataProductsCourseProject/' height='600px' width='2000px'></iframe>
+
+  
+</section>
+    </div>
+  </div>
+</body>
+  <script src="libraries/frameworks/RevealJS/lib/js/head.min.js"></script>
+  <script src="libraries/frameworks/RevealJS/js/reveal.min.js"></script>
+  <script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    theme: Reveal.getQueryHash().theme || 'default', 
+    transition: Reveal.getQueryHash().transition || 'default', 
+    dependencies: [
+    // Cross-browser shim that fully implements classList -
+    // https://github.com/eligrey/classList.js/
+      { src: 'libraries/frameworks/RevealJS/lib/js/classList.js', condition: function() { return !document.body.classList;}},
+      // Zoom in and out with Alt+click
+      { src: 'libraries/frameworks/RevealJS/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Speaker notes
+      { src: 'libraries/frameworks/RevealJS/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Remote control your reveal.js presentation using a touch device
+      //{ src: 'libraries/frameworks/RevealJS/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+      ]
+  });
+  </script>  <!-- LOAD HIGHLIGHTER JS FILES -->
+<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+ 
+
+</html>
